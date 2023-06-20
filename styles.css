@@ -1,0 +1,58 @@
+body {
+    background-image: url(Chicago-Deep-Dish-Pizza-LEAD-5-f8c04d3d77b24e479bbb1502758a5ed1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    text-align: center;
+    border:#fff;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size:larger;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, 
+    
+}
+.box{
+    background:
+    linear-gradient(105deg, rgba(32, 27, 27, 0.767) 39%, rgba(9, 13, 14, 0.749) 96%);
+    margin: 5px 300px 50px 300px
+}
+p {
+    font-style: italic;
+}
+h1, h2{margin: 0;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 10px 3px 3px rgba(0, 1, 2, 0.185);
+    
+}
+form {
+    width: 90vw;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+  input[type="text"],
+input[type="email"] {
+  border: 2px solid #000;
+  margin: 0 0 1em 0;
+  padding: 10px;
+  width: 20%;
+}
+
+input[type="submit"] {
+  border: 3px solid #333;
+  background-color: #999;
+  border-radius: 20px;
+  padding: 10px 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #cbbaba;
+}
+
+
+
+

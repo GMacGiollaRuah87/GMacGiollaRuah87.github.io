@@ -1,58 +1,117 @@
 body {
-    background-image: url(Chicago-Deep-Dish-Pizza-LEAD-5-f8c04d3d77b24e479bbb1502758a5ed1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    text-align: center;
-    border:#fff;
-    text-align: center;
+  background-image: url(bf0f6711fddfe41ad3180bb488690ae6--italian-restaurant-decor-italian-restaurants.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+     border:#fc0505;
     color:rgb(255, 255, 255);
-    font-size:larger;
-    font-style: oblique;
+    font-size:20px;
+    font-style:inherit;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, 
     
 }
-.box{
-    background:
-    linear-gradient(105deg, rgba(32, 27, 27, 0.767) 39%, rgba(9, 13, 14, 0.749) 96%);
-    margin: 5px 300px 50px 300px
-}
 p {
     font-style: italic;
+    text-align: center;
 }
 h1, h2{margin: 0;
     padding: 10px 20px;
-    color: rgb(0, 0, 0);
-    text-shadow: 10px 3px 3px rgba(0, 1, 2, 0.185);
-    
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(4, 78, 4);
+    text-align: center;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+/* cursor pointer on all radio and checkboxes*/
+label {
+  display: block;
+}
+#yes {
+  cursor: pointer
+}
+#no {
+  cursor: pointer
+}
+#cheese {
+  cursor: pointer;
+}
+#pepperoni {
+  cursor: pointer;
+}
+#sausage {
+  cursor: pointer;
+}
+#pepperoni-sausage {
+  cursor: pointer;
+}
+#supreme {
+  cursor: pointer;
+}
+#other {
+  cursor: pointer;
 }
 form {
-    width: 90vw;
-    max-width: 1000px;
+    width: 60vw;
+    max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    padding-bottom: 1em;
+    padding: 2em 2em 2em 2em
   }
+  /*red border to match marinara*/
   input[type="text"],
 input[type="email"] {
-  border: 2px solid #000;
+  border: 2px solid #f30000;
   margin: 0 0 1em 0;
   padding: 10px;
-  width: 20%;
+  width: 100%;
+  
 }
-
+input[type="number"] {
+  border: 2px solid #f30000;
+  margin: 1em 0 1em 0;
+  padding: 10px;
+  width: 15em;
+  min-height: 3em;
+}
+input, textarea {
+  background-color: #ffffff;
+  border: 2px solid #f30000;
+  color: #0c0c0c;
+  width: 2;
+}
 input[type="submit"] {
-  border: 3px solid #333;
-  background-color: #999;
-  border-radius: 20px;
-  padding: 10px 2em;
-  font-weight: bold;
-  color: #fff;
+  display: block;
+  width: 60%;
+  margin: 2em auto;
+  height: 4em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 400px;
+}
+#checkbox label {
+  display: inline;
+  font-size:large;
+  color:#e7e1e1
+
+
+}
+button {
+  background-color: #ffffff;
+  font-size: 18px;
+  border-color: #f30000;
+  cursor:pointer;
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: #cbbaba;
+.button {
+  transition-duration: 0.4s;
 }
-
-
-
+.button:hover {
+  background-color: rgb(36, 189, 5);
+  color:#ffffff
+}
+/*The hover option is not working for some reason*/
 

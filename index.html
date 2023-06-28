@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--Gabriel Mc
+Survey Form Re-submission
+6-27-2023-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+<!--Still need to work on creating a box around the form to seperate from background image-->
 </head>
-<h1 id="title">Survey form project</h1>
-<h2 id="text">Thank you for taking the time to complete this suvery</h2>
-<div class="box">
     <body>
-     <p id="description">If you LOVE pizza then tell me about it by completing this short survey.</p>
-    <main action="" id="survey-form">
-        <label for="name" id="name-label"> <input id="name" type="text" placeholder="Provide your name" required>Name</label>
-        <label for="email" id="email-label"> <input type="email" name="email" id="email" placeholder="Input your email" required>Email</label>
-        <fieldset>
-            <legend>What is your age?</legend>
-        <label for="number" id="number-label"> <input type="number" name="number" id="number" min="10" max="100" placeholder="Pick a number">Number</label>
-        </fieldset>
+        <h1 id="title">Survey form project</h1>
+<h2 id="text">Thank you for taking the time to complete this survey!</h2>
+
+     <p id="description">If you LOVE pizza then tell me about it by completing this questionnaire.</p>
+    <form action="form" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Provide your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Input your email" required>
+       
+           <label for="number" id="number-label">What is your age?</label>
+        <input type="number" name="number" id="number" min="10" max="100" placeholder="Pick a number">
+        
         
         <fieldset>
             <legend>Do you like pizza?</legend>
-        <input type="radio" name="pizza" id="yes" value="yes" checked>
-        <label for="yes">Yes</label>
-        <input type="radio" name="pizza" id="no" value="no" >
-        <label for="no">No</label>
+        
+        <label for="yes"><input type="radio" name="pizza" id="yes" value="yes" checked>Yes</label>
+        
+        <label for="no"><input type="radio" name="pizza" id="no" value="no" >No</label>
         </fieldset>
         <fieldset>
-            <legend>Select an option?</legend>
-        <select name="select" id="dropdown">
+            <legend>How do you like your crust?</legend>
+        <select name="crust" id="crust">
+            <option value="" disabled selected>select an option</option>
+            <option value="stuffed crust">Stuffed crust</option>
                 <option value="deep dish">Deep dish</option>
                 <option value="thin crust">Thin crust</option>
                 <option value="other">Other</option>
         </select>
         </fieldset>
-        <fieldset>
+        <fieldset id="checkbox">
             <legend>Your favorite pizza type if you selected yes</legend>
-            <input type="checkbox" name="type-of-pizza" id="cheese" value="cheese" >
+            <div>
+                <input type="checkbox" name="type-of-pizza" id="cheese" value="cheese" >
             <label for="cheese">Cheese</label>
+
+            </div>
+            <div>
             <input type="checkbox" name="type-of-pizza" id="pepperoni" value="pepperoni" >
             <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
             <input type="checkbox" name="type-of-pizza" id="sausage" value="sausage" >
             <label for="sausage">Sausage</label>
-            <input type="checkbox" name="type-of-pizza" id="pepperoni and sausage" value="pepperoni and sausage" >
-            <label for="pepperoni and sausage">Pepperoni and sausage</label>
+        </div>
+        <div>
+            <input type="checkbox" name="type-of-pizza" id="pepperoni-sausage" value="pepperoni-sausage" >
+            <label for="pepperoni-sausage">Pepperoni and sausage</label>
+        </div>
+        <div>
             <input type="checkbox" name="type-of-pizza" id="supreme" value="supreme" >
             <label for="supreme">Supreme</label>
+        </div>
+        <div>
             <input type="checkbox" name="type-of-pizza" id="other" value="other" >
             <label for="other">Other</label>
+        </div>
         </fieldset>
+        <div>
         <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tell us how you prefer your Pizza!"></textarea>
         <button type="submit" id="submit">Submit</button>
+    </div>
     </body>
-</div>
 </html>

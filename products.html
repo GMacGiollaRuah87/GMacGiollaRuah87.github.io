@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Gabriel McElroy
+    CIS133DA
+Portfolio
+7/12/2023-->
+
+<!--Professor, Just a heads up that barely any of my code seemed to pass the freecodecamp "success"
+tests.  HOWEVER, I did pass both HTML and CSS validation tests.  I followed your video guidance and
+did what I thought was best for my pages.  According the checklist, I passed.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <header id="Services">
+        <!--REMOVED Unlisted Item and Listed Items
+        to create a StickyNav bar instead-->
+        <ul id="navbar">
+            <li><a href="home">home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+        
+
+        </ul>
+        <h1>Gabriel's Luthier Services</h1>
+        <h2>..."simply the best!"</h2>
+
+       
+        <h3> All Services Include: </h3>
+        <div class="Services">
+            <p>*Full Inspection</p>
+            <p>*New Strings</p>
+            <p>*Complimentary Cleaning</p>
+            <p>And all of our services are backed by a one year guarantee!</p>
+
+        </div>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+    </header>
+    <main>
+        <section id="Pricing">
+
+            
+            <!--For responsive design media query-->
+            <div id="project-tiles">
+                <!--survey project card and link-->
+                <div class="card">
+                    <img src="/GMacGiollaRuah87.github.io/images/AcousticGuitar.jpg" alt="AcousticGuitar"
+                        style="width:100%">
+                    <div class="container">
+                        <h5><b>Acoustic Set-up</b></h5>
+                        <p>($75.00)
+
+                        </p>
+                    </div>
+                </div>
+                <!--tribute project card and link-->
+
+                <div class="card">
+                    <img src="/GMacGiollaRuah87.github.io/images/ElectricGuitarTele.jpg" alt="Telecaster"
+                        style="width:100%">
+                    <div class="container">
+                        <h5><b>Electric Guitar Set-Up</b></h5>
+                        <p>($65.00)</p>
+                    </div>
+                </div>
+                <!--products and services project card and link-->
+                <div class="card">
+                    <img src="/GMacGiollaRuah87.github.io/images/FenderPBass.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h5><b>Bass Set-Up</b></h5>
+                        <p>($60.00)</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!--email box for guests and their inquiries-->
+        <footer>
+        <div class="emailBox">
+            <label for="emailAddress">Need a qoute? Send me a message!</label><br />
+            <input id="emailAddress" type="email" size="64" maxlength="64" required placeholder="ex:james123@gmail.com">
+        </div>
+        <button type="submit" id="submit">GO FOR IT!</button>
+    </footer>
+    </main>
+
+</body>
+
+</html>

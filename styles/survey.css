@@ -18,6 +18,11 @@ p {
     font-style: italic;
     text-align: center;
 }
+header {
+  position: relative;
+  top: 4rem;
+  padding: 60px 14px 30px 14px;
+}
 /*sticky nav bar components*/
 ul {
   list-style-type: none;

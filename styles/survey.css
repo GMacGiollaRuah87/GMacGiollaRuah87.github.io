@@ -56,7 +56,6 @@ li a:hover {
   overflow: hidden;
   background-color: #333;
   position: fixed;
-   display: flex;
 }
 
 #navbar a {
